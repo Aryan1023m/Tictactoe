@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/temp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Addplayers">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="40dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp"
+        android:outlineSpotShadowColor="@color/black">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fill Details"
+            android:textColor="@color/blue"
+            android:gravity="center_horizontal"
+            android:textStyle="bold"
+            android:textSize="30dp"/>
+
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="220dp"
+            android:layout_height="200dp"
+            android:layout_marginStart="55dp"
+            android:layout_marginTop="40dp"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/lottie2" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            android:padding="50dp">
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/PLAYERONE"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="250dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/lavender_border"
+            android:drawableLeft="@drawable/cross3"
+            android:hint="Enter player one name"
+            android:maxLines="1"
+            android:paddingLeft="22dp"
+            android:textStyle="italic">
+
+        </EditText>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/lavender_border"
+            android:id="@+id/PLAYERTWO"
+            android:layout_marginTop="310dp"
+            android:layout_marginBottom="90dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:paddingLeft="21dp"
+            android:maxLines="1"
+            android:hint="Enter player two name"
+            android:textStyle="italic"
+            android:drawableLeft="@drawable/zero2"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/lavender_border"
+            android:id="@+id/rounds"
+            android:layout_marginTop="370dp"
+            android:inputType="number"
+            android:layout_marginBottom="90dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:paddingLeft="21dp"
+            android:maxLines="1"
+            android:hint="Enter number of rounds"
+            android:textStyle="italic"
+            android:drawableLeft="@drawable/cross3"/>
+
+        <Button
+            android:id="@+id/btnst"
+            android:layout_width="169dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="440dp"
+            android:layout_marginBottom="20dp"
+            android:text="START GAME"
+            android:textSize="18dp"
+            android:layout_marginLeft="80dp"
+            >
+
+
+        </Button>
+
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
